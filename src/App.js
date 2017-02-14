@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TodoList from './TodoList.js';
-import SearchBox from './SearchBox'
-import ServiceSelector from './ServiceSelector'
+import SearchBox from './SearchBox';
+import ServiceSelector from './ServiceSelector';
+import Counter from './Counter';
 
 const services = [
     { name: 'Web Development', price: 300 },
@@ -39,6 +40,9 @@ class App extends Component {
         </div>
         <div className="App-section">
           <TodoList />
+        </div>
+        <div className="App-section">
+          <Counter />
         </div>
         <div className="App-section">
           <SearchBox items={libraries} />
