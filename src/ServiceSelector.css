@@ -1,0 +1,11 @@
+.ServiceSelector p {
+  padding: 5px;
+  width: 400px;
+  cursor: pointer;
+}
+.ServiceSelector p:hover {
+  background-color: #eee;
+}
+.ServiceSelector p.active {
+  background-color: aqua;
+}
