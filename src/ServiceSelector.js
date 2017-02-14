@@ -9,27 +9,13 @@ class ServiceSelector extends Component {
   state = {
     total: 0
   }
-  addTotal = (price) => {
-    this.setState( { total: this.state.total + price } );
-  }
   render() {
-    const self = this;
-    let services = this.props.items.map(function(s){
-      return <ServiceItem
-              name={s.name}
-              price={s.price}
-              active={s.active}
-              addTotal={self.addTotal}
-            />;
-    });
-
     return (
       <div className='ServiceSelector'>
         <h3>Order Form</h3>
-
-        {services}
-        <div>
-          <p id="total">Total <b>${this.state.total.toFixed(2)}</b></p>
+        <div className='Service-list'> </div>
+        <div className='Service-total'>
+          <div id="total">Total <b>${this.state.total.toFixed(2)}</b></div>
         </div>
       </div>
     );

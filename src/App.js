@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>React Seatwork</h2>
+          <h2>React Seatwork 3</h2>
         </div>
         <div className="App-section">
           <TodoList />
