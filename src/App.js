@@ -3,8 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import TodoList from './TodoList.js';
 import SearchBox from './SearchBox'
+import ServiceSelector from './ServiceSelector'
 
-var libraries = [
+const services = [
+    { name: 'Web Development', price: 300 },
+    { name: 'Design', price: 400 },
+    { name: 'Integration', price: 250 },
+    { name: 'Training', price: 220 }
+];
+const libraries = [
     { name: 'Backbone.js', url: 'http://documentcloud.github.io/backbone/'},
     { name: 'AngularJS', url: 'https://angularjs.org/'},
     { name: 'jQuery', url: 'http://jquery.com/'},
@@ -30,11 +37,14 @@ class App extends Component {
         <div className="App-header">
           <h2>React Seatwork</h2>
         </div>
-        <div className="App-intro">
+        <div className="App-section">
           <TodoList />
         </div>
-        <div>
+        <div className="App-section">
           <SearchBox items={libraries} />
+        </div>
+        <div className="App-section">
+          <ServiceSelector items={services} />
         </div>
       </div>
     );

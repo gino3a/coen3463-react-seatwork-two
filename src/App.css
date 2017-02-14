@@ -13,9 +13,10 @@
   color: white;
 }
 
-.App-intro {
+.App-section {
   font-size: large;
-  padding-left: 50px;
+  padding: 20px 50px;
+  border: 1px solid #eee;
 }
 
 @keyframes App-logo-spin {
